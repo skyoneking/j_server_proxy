@@ -11,6 +11,7 @@ const httpPort = 3020
 let wsClient = null
 let wsServer = null
 
+// 通道
 function messageTrgger(isServer, data) {
     const anotherWs = isServer ? wsClient : wsServer
     if(!anotherWs) {
